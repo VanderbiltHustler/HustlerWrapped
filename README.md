@@ -1,2 +1,2 @@
-Vanderbilt Hustler Class of 2027 Freshman Survey
+Hustler 2023 Year in Review ("Wrapped")
 www.vanderbilthustler.com
