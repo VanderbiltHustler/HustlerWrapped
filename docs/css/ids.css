@@ -41,6 +41,8 @@ p {
     font-weight: 300;
     font-size: 12px;
     justify-content: left;
+    color: white;
+
 }
 
 h1, .bylines p, footer p {
@@ -52,7 +54,6 @@ h1, h2, h3 {
     margin: 0 auto;
     max-width: 80%;
     color: white;
-    z-index: 3;
 }
 
 h1 { /* first headline */
@@ -76,27 +77,30 @@ h2 { /* second headline */
     padding: 0; /* Reset padding to remove any extra space */
 }
 
-h3 { /* second headline */
+h3 { /* third headline */
     font-family: 'Libre Franklin', sans-serif;
     font-size: 168px;
     font-weight: 700;
     margin-top: -0.5em; /* Adjust the value to move the text up */
 }
 
-h4 { /* subheadline */
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
+h4 { /* section header */
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 30px;
+    font-size: bold;
+    color: white;
+
 }
 
-h5 { /* box head */
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: center;
+h5 { /* container text */
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 30px;
     font-size: bold;
-    color: #D6B464;
+    color: white;
 
 }
 
@@ -114,8 +118,6 @@ h7 { /* footer2 */
     line-height: 18px;
     text-align: center;
     color: #D6B464;
-    margin-top: 100px;
-
 }
 
 h8 { /* footer2 */

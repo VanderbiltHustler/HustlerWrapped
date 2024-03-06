@@ -77,7 +77,6 @@ header {
 
 /* SET ANY MORE STYLES YOU WANT HERE: */
 .image-behind-text {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -85,11 +84,9 @@ header {
   background-image: url('https://iili.io/JMQXsoP.png');
   background-position: center;
   background-size: cover;
-  z-index: 2;
 }
 
 .image-behind-text2 {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -98,10 +95,26 @@ header {
   background-position: center;
   background-size: 800px auto;
   background-repeat: no-repeat;
-  z-index: 1;
 
 }
 
+.rounded-rectangle-container {
+  background-color: #6901BA; /* Light grey background */
+  border-radius: 30px; /* Adjust this value to control the roundness of the corners */
+  padding: 50px; /* Space between the text and the borders of the container */
+  width: 500px; /* Width of the container */
+  margin: auto; /* Centers the container horizontally */
+  text-align: center; /* Center-aligns the text */
+  /*box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow around the container */
+  margin: 30px auto;}
+
+.responsive-image {
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: auto;
+  padding: 20px;
+}
 
 .dropdown a:hover {
   background-color: #f1f1f1;
