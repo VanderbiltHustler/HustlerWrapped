@@ -1,42 +1,52 @@
 'use strict';
+/*BUTTONS FOR ROUNDED PANELS*/
+// Initial setup to show the first container and set the first dot as active
 /*
-    DROPDOWN MENU
-    Adapted from Erika Lee's I360 course: https://codepen.io/ebigalee/pen/dyydovo
-*/
-function toggleDropdown() {
-    const socials = document.querySelector('.item');
-    socials.classList.toggle('show');
-}
-document.querySelector('.toggle').addEventListener('click', toggleDropdown);
-
-/*
-    GRAPH BUTTON
-*/
-
 window.onload = function() {
-// Call the changeChart function with the chartId for 'GENDER'
-changeChart('iaexy');
-};
-
-function loadChart(chartId) {
-    var container = document.getElementById('chartContainer');
-    container.innerHTML = ''; // Clear previous content if any
-    var script = document.createElement('script');
-    script.src = 'https://datawrapper.dwcdn.net/' + chartId + '/embed.js';
-    script.async = true;
-    container.appendChild(script);
+    changeContent(1); // Default to showing the first container
 }
 
-function changeChart(chartId) {
-    loadChart(chartId);
+function changeContent(selectedDot) {
+    // First, hide all containers
+    var allContainers = document.querySelectorAll('.rounded-rectangle-container, .rounded-rectangle-container2, .rounded-rectangle-container3, .rounded-rectangle-container4');
+    allContainers.forEach(function(container) {
+        container.style.display = 'none';
+    });
+    
+    // Then, based on the selected dot, show the corresponding container
+    document.querySelector('.rounded-rectangle-container' + selectedDot).style.display = 'block';
+    
+    // Update the dot colors to reflect the active selection
+    document.querySelectorAll('.dot').forEach(function(dot, index) {
+        dot.style.backgroundColor = (index + 1) === selectedDot ? '#8E6600' : 'gold'; // Assuming gold is the default, and #8E6600 is the active color
+    });
 }
 
+/*BUTTON FOR TEXT */
+document.addEventListener('DOMContentLoaded', function() {
+    var buttons = document.querySelectorAll('.toggle-btn');
 
-// Set the default iframe URL for the first box on page load
-window.onload = function() {
-    changeIframe('https://datawrapper.dwcdn.net/iaexy/3/');
-};
-        
+    buttons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var targetId = this.getAttribute('data-target');
+            var targetContent = document.getElementById(targetId);
+
+            // Toggle the active class on buttons
+            buttons.forEach(b => b.classList.remove('active-btn'));
+            this.classList.add('active-btn');
+
+            // Hide all content paragraphs
+            document.querySelectorAll('.content').forEach(function(content) {
+                content.style.display = 'none';
+            });
+
+            // Show the selected content paragraph
+            if (targetContent) {
+                targetContent.style.display = 'block';
+            }
+        });
+    });
+});
 
 /*DATA SCROLL SPEED
 */

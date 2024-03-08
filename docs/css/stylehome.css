@@ -98,15 +98,88 @@ header {
 
 }
 
-.rounded-rectangle-container {
+.containers-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* This will allow items to wrap to the next line on smaller screens */
+  gap: 4px; /* Adjust the gap as needed */
+  justify-content: center; /* Centers the items horizontally */
+  align-items: flex-start; /* Aligns items at their start, useful if they have different heights */
+}
+
+
+.rounded-rectangle-container1 {
   background-color: #6901BA; /* Light grey background */
   border-radius: 30px; /* Adjust this value to control the roundness of the corners */
   padding: 50px; /* Space between the text and the borders of the container */
-  width: 500px; /* Width of the container */
+  width: 400px; /* Width of the container */
+  height: 600px; /* Width of the container */
   margin: auto; /* Centers the container horizontally */
   text-align: center; /* Center-aligns the text */
   /*box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow around the container */
-  margin: 30px auto;}
+  margin: 10px auto;}
+
+
+.rounded-rectangle-container2 {
+  background-color: #06c455; /* Light grey background */
+  border-radius: 30px; /* Adjust this value to control the roundness of the corners */
+  padding: 50px 50px 100px 50px; /* Space between the text and the borders of the container */
+  width: 400px; /* Width of the container */
+  height: 600px; /* Width of the container */
+  margin: auto; /* Centers the container horizontally */
+  text-align: center; /* Center-aligns the text */
+  /*box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow around the container */
+  margin: 10px auto;
+}
+
+.rounded-rectangle-container3 {
+  background-color: #b1016b; /* Light grey background */
+  border-radius: 30px; /* Adjust this value to control the roundness of the corners */
+  padding: 50px 50px 100px 50px; /* Space between the text and the borders of the container */
+  width: 400px; /* Width of the container */
+  height: 600px; /* Width of the container */
+  margin: auto; /* Centers the container horizontally */
+  text-align: center; /* Center-aligns the text */
+  /*box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow around the container */
+  margin: 10px auto;
+}
+
+.rounded-rectangle-container4 {
+  background-color: #2730b5;
+  border-radius: 30px; /* Adjust this value to control the roundness of the corners */
+  padding: 50px 50px 100px 50px; /* Space between the text and the borders of the container */
+  width: 400px; /* Width of the container */
+  height: 600px; /* Width of the container */
+  margin: auto; /* Centers the container horizontally */
+  text-align: center; /* Center-aligns the text */
+  /*box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow around the container */
+  margin: 10px auto;
+}
+
+.highlighted-section {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 5px; /* Adjusted for inline display */
+  cursor: pointer; /* Changes the mouse cursor to indicate it's clickable */
+  border: none; /* Removes the default button border */
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Allows items to wrap if needed */
+}
+
+.content {
+  display: none;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Optional: Style to indicate which button is active */
+.active-btn {
+  background-color: #e0e0e0;
+}
 
 .responsive-image {
   max-width: 250px;
@@ -116,8 +189,39 @@ header {
   padding: 20px;
 }
 
-.dropdown a:hover {
-  background-color: #f1f1f1;
+.responsive-image2 {
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: auto;
+  padding: 35px 2px 2px 2px;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  background-color: #8E6600;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  margin: 0 7px!important; /* Adjusts space between the dots */
+
+}
+
+.dot:first-child {
+  background-color: #503900; /* Default selected dot */
+}
+
+/* You can add hover effects if you like */
+.dot:hover {
+  background-color: #503900;
 }
 
 .footer-logo {
