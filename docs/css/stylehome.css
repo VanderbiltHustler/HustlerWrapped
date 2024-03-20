@@ -102,7 +102,7 @@ header {
 
 .highlighted-section {
   background-color: #f0f0f0;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 10px;
   margin: 5px; /* Adjusted for inline display */
   cursor: pointer; /* Changes the mouse cursor to indicate it's clickable */
@@ -117,7 +117,6 @@ header {
 
 .content {
   display: none;
-  padding: 10px;
 }
 
 /*BUTTONS*/
