@@ -39,7 +39,7 @@ html {
 p {
     font-family: 'Georgia', serif;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 16px;
     justify-content: left;
     color: white;
 
@@ -145,12 +145,24 @@ h10 { /* text box head */
     color: #D6B464;
 }
 
-p { /* body copy */
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 300;
+h11 { /*body subheads*/
+    font-family: 'Libre Franklin';
+    font-weight: 700;
+    font-size: 24px;
+    justify-content: left;
+    color: white;
 
 }
+
+h12 { /*body subhead star*/
+    font-family: 'Libre Franklin';
+    font-weight: 700;
+    font-size: 24px;
+    justify-content: left;
+    color: #D6B464;
+
+}
+
 .bylines p { /* bylines */
     font-size: 14px;
     line-height: 1;
@@ -330,22 +342,6 @@ ul div {
     }
 }
 
-/* Add some style to the dropdown links */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    z-index: 1;
-    top: 50px; /* Adjust this value to move the dropdown content down */
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: rgba(214, 180, 100, 0.4); /* Adjusted alpha value to 0.8 */
-}
-
 
 /* 
     ARTICLE ALIGNMENT (flexbox added in larger view widths)
@@ -446,6 +442,8 @@ figcaption {
 /*
     LINKS
 */
+/* Custom link style */
+
 /* default link styles */
 a:link, a:visited {
     color:#D6B464;
@@ -456,6 +454,7 @@ a:hover, a:active {
     color: #D6B464;
     border-bottom: none;
 }
+
 /* navbar social icons */
 nav li a:link, nav li a:visited {
     color: black;

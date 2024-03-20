@@ -6,18 +6,21 @@
 /* set any colors you plan to use throughout the buildout here */
 /* then you can adjust the color value easily */
 :root {
-    /* --mycolor: #your color here; */
-
-    body {
-        background-color: #D6B464;
+  --gradient-start: #D6B464; /* Start color of the gradient */
+  --gradient-mid: #8E6600; /* End color of the gradient */
+  --gradient-end: #433209; /* End color of the gradient */
 }
 
-
+body {
+  background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-mid), var(--gradient-end));
+  /* Gradient background from --gradient-start to --gradient-end */
+  height: 100%; /* Set height to cover the entire page */
+}
 
 header {
   /* add header image below */
   /* can use a file path before the photo is uploaded to ceo */
-  background: url('https://iili.io/JMQWXQ1.jpg'); 
+  background: url('https://iili.io/JXEm9OG.png'); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; 
@@ -47,60 +50,54 @@ header {
 }
 
 .containers-wrapper {
-  display: flex;
-  flex-wrap: wrap; /* This will allow items to wrap to the next line on smaller screens */
-  gap: 4px; /* Adjust the gap as needed */
+  display: block;
+  flex-wrap: wrap; /* This will allow items to wrap to the next line on smaller screens*/
   justify-content: center; /* Centers the items horizontally */
-  align-items: flex-start; /* Aligns items at their start, useful if they have different heights */
+  align-items: center;
 }
 
 
 .rounded-rectangle-container1 {
   background-color: #6901BA; /* Light grey background */
-  border-radius: 30px; /* Adjust this value to control the roundness of the corners */
+  border-radius: 50px; /* Adjust this value to control the roundness of the corners */
   padding: 50px; /* Space between the text and the borders of the container */
-  width: 400px; /* Width of the container */
-  height: 600px; /* Width of the container */
-  margin: auto; /* Centers the container horizontally */
+  width: 50%; /* Width of the container */
+  height: 100%; /* Height of the container */
+  margin: auto;
   text-align: center; /* Center-aligns the text */
-  /*box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow around the container */
-  margin: 10px auto;}
-
+}
 
 .rounded-rectangle-container2 {
   background-color: #06c455; /* Light grey background */
   border-radius: 30px; /* Adjust this value to control the roundness of the corners */
   padding: 50px 50px 100px 50px; /* Space between the text and the borders of the container */
-  width: 400px; /* Width of the container */
-  height: 600px; /* Width of the container */
-  margin: auto; /* Centers the container horizontally */
+  width: 50%;; /* Width of the container */
+  height: 100%; /* Height of the container */
+  margin: auto;
   text-align: center; /* Center-aligns the text */
   /*box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow around the container */
-  margin: 10px auto;
 }
 
 .rounded-rectangle-container3 {
   background-color: #b1016b; /* Light grey background */
   border-radius: 30px; /* Adjust this value to control the roundness of the corners */
   padding: 50px 50px 100px 50px; /* Space between the text and the borders of the container */
-  width: 400px; /* Width of the container */
-  height: 600px; /* Width of the container */
-  margin: auto; /* Centers the container horizontally */
+  width: 50%;; /* Width of the container */
+  height: 100%; /* Width of the container */
+  margin: auto;
   text-align: center; /* Center-aligns the text */
   /*box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow around the container */
-  margin: 10px auto;
 }
 
 .rounded-rectangle-container4 {
   background-color: #2730b5;
   border-radius: 30px; /* Adjust this value to control the roundness of the corners */
   padding: 50px 50px 100px 50px; /* Space between the text and the borders of the container */
-  width: 400px; /* Width of the container */
-  height: 600px; /* Width of the container */
-  margin: auto; /* Centers the container horizontally */
+  width: 50%;; /* Width of the container */
+  height: 100%; /* Width of the container */
+  margin: auto;
   text-align: center; /* Center-aligns the text */
   /*box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow around the container */
-  margin: 10px auto;
 }
 
 .highlighted-section {
@@ -121,12 +118,44 @@ header {
 .content {
   display: none;
   padding: 10px;
-  margin: 10px 0;
 }
 
-/* Optional: Style to indicate which button is active */
+/*BUTTONS*/
+.buttons-container {
+  display: flex;
+  align-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.toggle-btn {
+  padding: 20px 20px;
+  margin: 10px;
+  background-color: #D6B464;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: #c3c3c3;
+}
+
+.toggle-btn:active {
+  background-color: #c3c3c3;
+}
+
+.button:hover {
+  background-color: #c3c3c3;
+}
+
+.button:active {
+  background-color: #c3c3c3;
+}
+
 .active-btn {
-  background-color: #e0e0e0;
+  background-color: #c3c3c3;
 }
 
 .responsive-image {
@@ -146,7 +175,7 @@ header {
 }
 
 .dots-container {
-  display: flex;
+  position: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
@@ -156,7 +185,7 @@ header {
   cursor: pointer;
   height: 20px;
   width: 20px;
-  background-color: #8E6600;
+  background-color: #F2EEE3;
   border-radius: 50%;
   transition: background-color 0.3s;
   margin: 0 7px!important; /* Adjusts space between the dots */
@@ -202,7 +231,6 @@ No media query for `xs` since this is the default */
 
 @media (max-width: 1000px) {
   header {
-    background-color: #D6B464;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

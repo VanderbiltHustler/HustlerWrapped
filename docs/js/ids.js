@@ -1,8 +1,7 @@
 'use strict';
 /*BUTTONS FOR ROUNDED PANELS*/
 // Initial setup to show the first container and set the first dot as active
-/*
-window.onload = function() {
+/*window.onload = function() {
     changeContent(1); // Default to showing the first container
 }
 
@@ -20,7 +19,7 @@ function changeContent(selectedDot) {
     document.querySelectorAll('.dot').forEach(function(dot, index) {
         dot.style.backgroundColor = (index + 1) === selectedDot ? '#8E6600' : 'gold'; // Assuming gold is the default, and #8E6600 is the active color
     });
-}
+} */
 
 /*BUTTON FOR TEXT */
 document.addEventListener('DOMContentLoaded', function() {
