@@ -163,6 +163,28 @@ h12 { /*body subhead star*/
 
 }
 
+h13 {
+    font-family: 'Libre Franklin';
+    font-weight: 700;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #8E6600;
+}
+
+
+.dot p { /*body subhead star*/
+    font-family: 'Libre Franklin';
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    justify-content: middle;
+    padding-top: 1px;
+    color: white;
+}
+
 .bylines p { /* bylines */
     font-size: 14px;
     line-height: 1;

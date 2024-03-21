@@ -54,8 +54,8 @@ header {
   flex-wrap: wrap; /* This will allow items to wrap to the next line on smaller screens*/
   justify-content: center; /* Centers the items horizontally */
   align-items: center;
+  margin-bottom: 20px; /* Add space of 20 pixels below the container */
 }
-
 
 .rounded-rectangle-container1 {
   background-color: #6901BA; /* Light grey background */
@@ -119,6 +119,33 @@ header {
   display: none;
 }
 
+/*DOT BUTTONS*/
+.dot-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-content: center;
+}
+
+.dot {
+  width: 30px; /* Adjust width for bigger dots */
+  height: 30px; /* Adjust height for bigger dots */
+  border-radius: 50%; /* Make it a circle */
+  background-color: #D6B464; /* Default color */
+  display: inline-block;
+  margin: 0 5px;
+  padding-bottom: 5px;
+}
+
+.dot p { /*body subhead star*/
+  font-family: 'Libre Franklin';
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  justify-content: middle;
+  color: #433209;
+}
+
 /*BUTTONS*/
 .buttons-container {
   display: flex;
@@ -133,7 +160,6 @@ header {
   background-color: #D6B464;
   color: #fff;
   border: none;
-  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -173,32 +199,8 @@ header {
   padding: 35px 2px 2px 2px;
 }
 
-.dots-container {
-  position: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.dot {
-  cursor: pointer;
-  height: 20px;
-  width: 20px;
-  background-color: #F2EEE3;
-  border-radius: 50%;
-  transition: background-color 0.3s;
-  margin: 0 7px!important; /* Adjusts space between the dots */
-
-}
-
-.dot:first-child {
-  background-color: #503900; /* Default selected dot */
-}
 
 /* You can add hover effects if you like */
-.dot:hover {
-  background-color: #503900;
-}
 
 .footer-logo {
   max-width: 20%; /* Ensure the image doesn't exceed its container */
