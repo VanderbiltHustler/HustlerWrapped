@@ -14,10 +14,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Add the active class to the first button on load
+    if (buttons.length > 0) {
+        buttons[0].classList.add('active-dot');
+    }
+
     buttons.forEach(function(btn) {
         btn.addEventListener('click', function() {
             var targetId = this.getAttribute('data-target');
             var targetContent = document.getElementById(targetId);
+
+            // Toggle the active class on buttons
+            buttons.forEach(function(btn) {
+                btn.classList.remove('active-dot');
+            });
+            this.classList.add('active-dot');
 
             // Hide all content paragraphs
             contents.forEach(function(content) {
@@ -30,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
 
 });
 
