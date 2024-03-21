@@ -88,7 +88,7 @@ h4 { /* section header */
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 700;
     font-size: 35px;
-    line-height: 30px;
+    line-height: 50px;
     font-size: bold;
     color: white;
 
@@ -175,15 +175,6 @@ h13 {
 }
 
 
-.dot p { /*body subhead star*/
-    font-family: 'Libre Franklin';
-    font-weight: 600;
-    font-size: 12px;
-    text-align: center;
-    justify-content: middle;
-    padding-top: 1px;
-    color: white;
-}
 
 .bylines p { /* bylines */
     font-size: 14px;

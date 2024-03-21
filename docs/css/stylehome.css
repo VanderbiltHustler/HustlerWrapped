@@ -57,8 +57,8 @@ header {
   margin-bottom: 20px; /* Add space of 20 pixels below the container */
 }
 
-.rounded-rectangle-container1 {
-  background-color: #6901BA; /* Light grey background */
+
+.rounded-rectangle-container {
   border-radius: 50px; /* Adjust this value to control the roundness of the corners */
   padding: 50px; /* Space between the text and the borders of the container */
   width: 50%; /* Width of the container */
@@ -67,38 +67,22 @@ header {
   text-align: center; /* Center-aligns the text */
 }
 
-.rounded-rectangle-container2 {
-  background-color: #06c455; /* Light grey background */
-  border-radius: 30px; /* Adjust this value to control the roundness of the corners */
-  padding: 50px 50px 100px 50px; /* Space between the text and the borders of the container */
-  width: 50%;; /* Width of the container */
-  height: 100%; /* Height of the container */
-  margin: auto;
-  text-align: center; /* Center-aligns the text */
-  /*box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow around the container */
+.rounded-rectangle-container#cont1 {
+  background-color: #6901BA; 
 }
 
-.rounded-rectangle-container3 {
-  background-color: #b1016b; /* Light grey background */
-  border-radius: 30px; /* Adjust this value to control the roundness of the corners */
-  padding: 50px 50px 100px 50px; /* Space between the text and the borders of the container */
-  width: 50%;; /* Width of the container */
-  height: 100%; /* Width of the container */
-  margin: auto;
-  text-align: center; /* Center-aligns the text */
-  /*box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow around the container */
+.rounded-rectangle-container#cont2 {
+  background-color: #06c455; 
 }
 
-.rounded-rectangle-container4 {
-  background-color: #2730b5;
-  border-radius: 30px; /* Adjust this value to control the roundness of the corners */
-  padding: 50px 50px 100px 50px; /* Space between the text and the borders of the container */
-  width: 50%;; /* Width of the container */
-  height: 100%; /* Width of the container */
-  margin: auto;
-  text-align: center; /* Center-aligns the text */
-  /*box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow around the container */
+.rounded-rectangle-container#cont3 {
+  background-color: #b1016b; 
 }
+
+.rounded-rectangle-container#cont4 {
+  background-color: #2730b5; 
+}
+
 
 .highlighted-section {
   background-color: #f0f0f0;
@@ -125,6 +109,7 @@ header {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-content: center;
+  cursor: pointer;
 }
 
 .dot {
@@ -134,7 +119,10 @@ header {
   background-color: #D6B464; /* Default color */
   display: inline-block;
   margin: 0 5px;
-  padding-bottom: 5px;
+}
+
+.dot:hover {
+  background-color: #c3c3c3;
 }
 
 .dot p { /*body subhead star*/
@@ -144,6 +132,7 @@ header {
   text-align: center;
   justify-content: middle;
   color: #433209;
+  padding-top: 1px;
 }
 
 /*BUTTONS*/
