@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (targetContent) {
                 targetContent.style.display = 'block';
             }
+
         });
     });
 
