@@ -57,31 +57,27 @@ h1, h2, h3 {
 }
 
 h1 { /* first headline */
-    padding: 30vh 0 0.75em;
+    padding: 26vh 0 0.3em;
     font-size: 45px;
     font-family: 'Georgia', serif;
     font-style: italic;
     margin-left: 130px; /* Moves the text to the right */
     position: static;
-
 }
 
 h2 { /* second headline */
-    padding: 20vh 0 0.75em;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 200px;
     font-weight: 800;
-    margin-top: -0.3em; /* Adjust the value to move the text up */
-    margin-right: 90px; /* Moves the text to the right */
-    line-height: 1; /* Reduce line height to bring the text up */
+    margin-top: -0.26em; /* Adjust the value to move the text up */
     padding: 0; /* Reset padding to remove any extra space */
 }
 
 h3 { /* third headline */
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 168px;
+    font-size: 150px;
     font-weight: 800;
-    margin-top: -0.5em; /* Adjust the value to move the text up */
+    margin-top: -0.45em; /* Adjust the value to move the text up */
 }
 
 h4 { /* section header */
