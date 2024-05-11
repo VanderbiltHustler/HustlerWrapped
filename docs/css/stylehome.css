@@ -72,6 +72,37 @@ header {
   overflow: hidden;
 }
 
+.rounded-rectangle-image-2 {
+  border-radius: 10px; /* Adjust the radius as needed */
+  overflow: hidden;
+  padding: 20px 0; /* Add top and bottom padding of 20 pixels */
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row; /* Arrange items horizontally */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  border-radius: 0px; /* Adjust the radius as needed */
+  margin-bottom: 10px;
+}
+
+.image-container .vertical {
+  width: 320px; /* Set width to 320px */
+  height: 400px; /* Set height to 400px */
+  object-fit: cover; /* Crop images to fit */
+  margin: 0 5px; /* Add horizontal margin between images */
+}
+
+.image-container .vertical2 {
+  width: 230px; /* Set width to 320px */
+  height: 320px; /* Set height to 400px */
+  object-fit: cover; /* Crop images to fit */
+  margin: 0 5px; /* Add horizontal margin between images */
+}
+
+
+
 .rounded-rectangle-container#cont1 {
   background-color: #6901BA; 
 }
