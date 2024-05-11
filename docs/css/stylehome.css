@@ -295,6 +295,31 @@ No media query for `xs` since this is the default */
   }
 }
 
+@media (max-width: 1000px) {
+  .image-container {
+    display: flex;
+    flex-direction: column; /* Arrange items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    border-radius: 0px; /* Adjust the radius as needed */
+    margin-bottom: 10px;
+  }
+  
+  .image-container .vertical {
+    width: 320px; /* Set width to 320px */
+    height: 400px; /* Set height to 400px */
+    object-fit: cover; /* Crop images to fit */
+    margin: 10px; /* Add horizontal margin between images */
+  }
+  
+  .image-container .vertical2 {
+    width: 320px; /* Set width to 320px */
+    height: 400px; /* Set height to 400px */
+    object-fit: cover; /* Crop images to fit */
+    margin: 10px; /* Add horizontal margin between images */
+  }
+}
+
 /* Medium devices (tablets, 768px and up) */
 /*@media (min-width: 768px) {
     header {
