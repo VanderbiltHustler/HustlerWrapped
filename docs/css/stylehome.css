@@ -262,9 +262,7 @@ No media query for `xs` since this is the default */
 @media (max-width: 1000px) {
   .buttons-container {
     display: flex;
-    align-content: center;
-    text-align: center; /* Center-aligns the text */
-    gap: 20px;
+    gap: 10px;
     width: 300px;
   }
 
