@@ -142,7 +142,6 @@ h11 { /*body subheads*/
     font-size: 24px;
     justify-content: left;
     color: white;
-
 }
 
 h12 { /*body subhead star*/
@@ -172,6 +171,14 @@ h14 /*panel text*/ {
     color: white;
 }
 
+h15 { /*body subheads*/
+    font-family: 'Libre Franklin';
+    font-weight: 700;
+    font-size: 24px;
+    justify-content: middle;
+    color: white;
+}
+
 @media (max-width: 1000px) {
     h1 { /* first headline */
         padding: 37vh 0 0.1em;
@@ -193,6 +200,12 @@ h14 /*panel text*/ {
         font-size: 60px;
         font-weight: 800;
         margin-top: -0.45em; /* Adjust the value to move the text up */
+    }
+
+    h15 {
+        font-family: 'Libre Franklin';
+        font-size: 18px;
+        justify-content: middle;
     }
 }
 
