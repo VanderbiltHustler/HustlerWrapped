@@ -137,7 +137,7 @@ h10 { /* text box head */
 }
 
 h11 { /*body subheads*/
-    font-family: 'Libre Franklin';
+    font-family: 'Libre Franklin', sans-serif;
     font-weight: 700;
     font-size: 24px;
     justify-content: left;
@@ -154,7 +154,7 @@ h12 { /*body subhead star*/
 }
 
 h13 /*section divider*/ {
-    font-family: 'Libre Franklin';
+    font-family: 'Libre Franklin', sans-serif;
     font-weight: 700;
     font-size: 50px;
     display: flex;
@@ -172,7 +172,7 @@ h14 /*panel text*/ {
 }
 
 h15 { /*body subheads*/
-    font-family: 'Libre Franklin';
+    font-family: 'Libre Franklin', sans-serif;
     font-weight: 700;
     font-size: 24px;
     justify-content: middle;
