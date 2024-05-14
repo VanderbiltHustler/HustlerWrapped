@@ -107,16 +107,6 @@ header {
   background-color: #2730b5; 
 }
 
-
-.highlighted-section {
-  background-color: #f0f0f0;
-  padding: 5px 10px;
-  border-radius: 10px;
-  margin: 5px; /* Adjusted for inline display */
-  cursor: pointer; /* Changes the mouse cursor to indicate it's clickable */
-  border: none; /* Removes the default button border */
-}
-
 .content-container {
   display: flex;
   align-items: center;
@@ -179,9 +169,20 @@ header {
   padding: 20px 20px;
   margin: 10px;
   background-color: #D6B464;
-  color: #fff;
+  color: #D6B464;
   border: none;
   cursor: pointer;
+  width: 100%;
+}
+
+.highlighted-section {
+  background-color: #D6B464;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 5px; /* Adjusted for inline display */
+  cursor: pointer; /* Changes the mouse cursor to indicate it's clickable */
+  border: none; /* Removes the default button border */
+  width: 100%;
 }
 
 .toggle-btn:hover {
@@ -262,8 +263,8 @@ No media query for `xs` since this is the default */
 @media (max-width: 1000px) {
   .buttons-container {
     display: flex;
-    gap: 10px;
-    width: 300px;
+    gap: 1px;
+    width: 100%;
   }
 
 }
