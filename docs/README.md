@@ -9,24 +9,14 @@ Published: 5/13/2024 <br>
     ├── css
     │   ├── main.css
     │   ├── normalize.css
-    │   ├── stylecollegelife.css
-    │   ├── styledemographics.css
-    │   ├── stylehome.css
-    │   ├── stylelifestyle.css
-    │   ├── stylemethodology.css
-    │   ├── stylepolitics.css
-    │   └── stylepostgrad.css
+    │   └── stylehome.css
     ├── js
     │   └── script.js
-    ├── college-life.html
-    ├── demographics.html
-    ├── index.html
-    ├── lifestyle.html
-    ├── methodology.html
-    ├── politics.html
-    └── post-grad.html
+    ├── README.md
+    └── index.html
 
-4 directories, 17 files
+4 directories, 6 files
+
 
 ```
 
